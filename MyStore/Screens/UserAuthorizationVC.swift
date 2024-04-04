@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  UserAuthorizationVC.swift
 //  MyStore
 //
 //  Created by Aruuke Turgunbaeva on 4/4/24.
@@ -7,13 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class UserAuthorizationVC: UIViewController {
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .systemBackground
     }
-
-
 }
-
