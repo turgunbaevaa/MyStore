@@ -15,6 +15,12 @@
 		0A87F78C2BBEF3F1007321F1 /* MSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F78B2BBEF3F1007321F1 /* MSTextField.swift */; };
 		0A87F78F2BBEF489007321F1 /* MSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F78E2BBEF489007321F1 /* MSButton.swift */; };
 		0A87F7922BBEF622007321F1 /* UserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F7912BBEF622007321F1 /* UserSessionManager.swift */; };
+		0A87F7952BBFFF1A007321F1 /* UserAuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F7942BBFFF1A007321F1 /* UserAuthorizationView.swift */; };
+		0A87F7982BBFFF41007321F1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F7972BBFFF41007321F1 /* Person.swift */; };
+		0A87F79A2BBFFF5C007321F1 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F7992BBFFF5C007321F1 /* UserProfileView.swift */; };
+		0A87F79C2BBFFF73007321F1 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F79B2BBFFF73007321F1 /* UserProfileVC.swift */; };
+		0A87F79F2BC000BE007321F1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0A87F79E2BC000BE007321F1 /* SnapKit */; };
+		0A87F7A22BC00146007321F1 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F7A12BC00146007321F1 /* UIView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,11 @@
 		0A87F78B2BBEF3F1007321F1 /* MSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTextField.swift; sourceTree = "<group>"; };
 		0A87F78E2BBEF489007321F1 /* MSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSButton.swift; sourceTree = "<group>"; };
 		0A87F7912BBEF622007321F1 /* UserSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionManager.swift; sourceTree = "<group>"; };
+		0A87F7942BBFFF1A007321F1 /* UserAuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthorizationView.swift; sourceTree = "<group>"; };
+		0A87F7972BBFFF41007321F1 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		0A87F7992BBFFF5C007321F1 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		0A87F79B2BBFFF73007321F1 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
+		0A87F7A12BC00146007321F1 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A87F79F2BC000BE007321F1 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,8 +72,8 @@
 		0A87F7702BBEE9C5007321F1 /* MyStore */ = {
 			isa = PBXGroup;
 			children = (
-				0A87F7892BBEF3AB007321F1 /* CustomViews */,
-				0A87F7862BBEF31F007321F1 /* Screens */,
+				0A87F7A02BC0011F007321F1 /* Extensions */,
+				0A87F7892BBEF3AB007321F1 /* Modules */,
 				0A87F7852BBEF2EF007321F1 /* Support */,
 				0A87F77F2BBEE9C6007321F1 /* Info.plist */,
 			);
@@ -79,22 +91,15 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		0A87F7862BBEF31F007321F1 /* Screens */ = {
+		0A87F7892BBEF3AB007321F1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				0A87F7872BBEF339007321F1 /* UserAuthorizationVC.swift */,
-			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
-		0A87F7892BBEF3AB007321F1 /* CustomViews */ = {
-			isa = PBXGroup;
-			children = (
-				0A87F7902BBEF5FF007321F1 /* ViewControllers */,
+				0A87F7962BBFFF24007321F1 /* UserProfile */,
+				0A87F7932BBFFED0007321F1 /* Authorization */,
 				0A87F78D2BBEF473007321F1 /* Buttons */,
 				0A87F78A2BBEF3C5007321F1 /* TextFields */,
 			);
-			path = CustomViews;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		0A87F78A2BBEF3C5007321F1 /* TextFields */ = {
@@ -113,12 +118,32 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
-		0A87F7902BBEF5FF007321F1 /* ViewControllers */ = {
+		0A87F7932BBFFED0007321F1 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
+				0A87F7872BBEF339007321F1 /* UserAuthorizationVC.swift */,
 				0A87F7912BBEF622007321F1 /* UserSessionManager.swift */,
+				0A87F7942BBFFF1A007321F1 /* UserAuthorizationView.swift */,
 			);
-			path = ViewControllers;
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		0A87F7962BBFFF24007321F1 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				0A87F7972BBFFF41007321F1 /* Person.swift */,
+				0A87F7992BBFFF5C007321F1 /* UserProfileView.swift */,
+				0A87F79B2BBFFF73007321F1 /* UserProfileVC.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		0A87F7A02BC0011F007321F1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A87F7A12BC00146007321F1 /* UIView+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +162,9 @@
 			dependencies = (
 			);
 			name = MyStore;
+			packageProductDependencies = (
+				0A87F79E2BC000BE007321F1 /* SnapKit */,
+			);
 			productName = MyStore;
 			productReference = 0A87F76E2BBEE9C5007321F1 /* MyStore.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +193,9 @@
 				Base,
 			);
 			mainGroup = 0A87F7652BBEE9C5007321F1;
+			packageReferences = (
+				0A87F79D2BC000BE007321F1 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 0A87F76F2BBEE9C5007321F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -191,11 +222,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A87F7952BBFFF1A007321F1 /* UserAuthorizationView.swift in Sources */,
+				0A87F7A22BC00146007321F1 /* UIView+Ext.swift in Sources */,
+				0A87F79A2BBFFF5C007321F1 /* UserProfileView.swift in Sources */,
 				0A87F7882BBEF339007321F1 /* UserAuthorizationVC.swift in Sources */,
+				0A87F79C2BBFFF73007321F1 /* UserProfileVC.swift in Sources */,
 				0A87F7922BBEF622007321F1 /* UserSessionManager.swift in Sources */,
 				0A87F78C2BBEF3F1007321F1 /* MSTextField.swift in Sources */,
 				0A87F7722BBEE9C5007321F1 /* AppDelegate.swift in Sources */,
 				0A87F78F2BBEF489007321F1 /* MSButton.swift in Sources */,
+				0A87F7982BBFFF41007321F1 /* Person.swift in Sources */,
 				0A87F7742BBEE9C5007321F1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +445,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A87F79D2BC000BE007321F1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A87F79E2BC000BE007321F1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A87F79D2BC000BE007321F1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A87F7662BBEE9C5007321F1 /* Project object */;
 }
