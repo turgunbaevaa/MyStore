@@ -8,6 +8,10 @@
 import UIKit
 import SnapKit
 
+protocol UserViewProtocol: AnyObject {
+    func checkLogInButton()
+}
+
 class UserAuthorizationView: UIView {
 
     let nameTF = MSTextField(placeholder: "Enter your name: ")
@@ -15,6 +19,8 @@ class UserAuthorizationView: UIView {
     let logInButton = MSButton(color: .purple, title: "Login", systemImageName: "person")
     var itemViews: [UIView] = []
 
+    weak var delegate: UserViewProtocol?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .systemBackground
@@ -58,6 +64,6 @@ class UserAuthorizationView: UIView {
     }
     
     @objc private func logInButtonTapped() {
-        
+        delegate?.checkLogInButton()
     }
 }

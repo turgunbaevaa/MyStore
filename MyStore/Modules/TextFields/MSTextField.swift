@@ -44,5 +44,4 @@ class MSTextField: UITextField {
     func set(placeholder: String){
         self.placeholder = placeholder
     }
-    
 }

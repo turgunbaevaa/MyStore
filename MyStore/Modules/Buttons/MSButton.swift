@@ -38,5 +38,4 @@ class MSButton: UIButton {
         configuration?.imagePadding = 6
         configuration?.imagePlacement = .leading
     }
-    
 }

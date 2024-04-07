@@ -11,16 +11,21 @@
 		0A87F7742BBEE9C5007321F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F7732BBEE9C5007321F1 /* SceneDelegate.swift */; };
 		0A87F77B2BBEE9C6007321F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A87F77A2BBEE9C6007321F1 /* Assets.xcassets */; };
 		0A87F77E2BBEE9C6007321F1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0A87F77D2BBEE9C6007321F1 /* Base */; };
-		0A87F7882BBEF339007321F1 /* UserAuthorizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F7872BBEF339007321F1 /* UserAuthorizationVC.swift */; };
+		0A87F7882BBEF339007321F1 /* UserAuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F7872BBEF339007321F1 /* UserAuthorizationViewController.swift */; };
 		0A87F78C2BBEF3F1007321F1 /* MSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F78B2BBEF3F1007321F1 /* MSTextField.swift */; };
 		0A87F78F2BBEF489007321F1 /* MSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F78E2BBEF489007321F1 /* MSButton.swift */; };
 		0A87F7922BBEF622007321F1 /* UserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F7912BBEF622007321F1 /* UserSessionManager.swift */; };
 		0A87F7952BBFFF1A007321F1 /* UserAuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F7942BBFFF1A007321F1 /* UserAuthorizationView.swift */; };
 		0A87F7982BBFFF41007321F1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F7972BBFFF41007321F1 /* Person.swift */; };
 		0A87F79A2BBFFF5C007321F1 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F7992BBFFF5C007321F1 /* UserProfileView.swift */; };
-		0A87F79C2BBFFF73007321F1 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F79B2BBFFF73007321F1 /* UserProfileVC.swift */; };
+		0A87F79C2BBFFF73007321F1 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F79B2BBFFF73007321F1 /* UserProfileViewController.swift */; };
 		0A87F79F2BC000BE007321F1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0A87F79E2BC000BE007321F1 /* SnapKit */; };
 		0A87F7A22BC00146007321F1 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F7A12BC00146007321F1 /* UIView+Ext.swift */; };
+		0A87F7A42BC2D805007321F1 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F7A32BC2D805007321F1 /* UIViewController+Ext.swift */; };
+		0A87F7A72BC2D8A0007321F1 /* MSAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F7A62BC2D8A0007321F1 /* MSAlertVC.swift */; };
+		0A87F7A92BC2D8F9007321F1 /* MSAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F7A82BC2D8F9007321F1 /* MSAlertContainerView.swift */; };
+		0A87F7AC2BC2D935007321F1 /* MSTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F7AB2BC2D935007321F1 /* MSTitleLabel.swift */; };
+		0A87F7AE2BC2D961007321F1 /* MSSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87F7AD2BC2D961007321F1 /* MSSecondaryTitleLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,15 +35,20 @@
 		0A87F77A2BBEE9C6007321F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A87F77D2BBEE9C6007321F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A87F77F2BBEE9C6007321F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A87F7872BBEF339007321F1 /* UserAuthorizationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthorizationVC.swift; sourceTree = "<group>"; };
+		0A87F7872BBEF339007321F1 /* UserAuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthorizationViewController.swift; sourceTree = "<group>"; };
 		0A87F78B2BBEF3F1007321F1 /* MSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTextField.swift; sourceTree = "<group>"; };
 		0A87F78E2BBEF489007321F1 /* MSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSButton.swift; sourceTree = "<group>"; };
 		0A87F7912BBEF622007321F1 /* UserSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionManager.swift; sourceTree = "<group>"; };
 		0A87F7942BBFFF1A007321F1 /* UserAuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthorizationView.swift; sourceTree = "<group>"; };
 		0A87F7972BBFFF41007321F1 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		0A87F7992BBFFF5C007321F1 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
-		0A87F79B2BBFFF73007321F1 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
+		0A87F79B2BBFFF73007321F1 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		0A87F7A12BC00146007321F1 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		0A87F7A32BC2D805007321F1 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		0A87F7A62BC2D8A0007321F1 /* MSAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSAlertVC.swift; sourceTree = "<group>"; };
+		0A87F7A82BC2D8F9007321F1 /* MSAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSAlertContainerView.swift; sourceTree = "<group>"; };
+		0A87F7AB2BC2D935007321F1 /* MSTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSTitleLabel.swift; sourceTree = "<group>"; };
+		0A87F7AD2BC2D961007321F1 /* MSSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,8 @@
 		0A87F7892BBEF3AB007321F1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0A87F7AA2BC2D923007321F1 /* Labels */,
+				0A87F7A52BC2D88F007321F1 /* Views */,
 				0A87F7962BBFFF24007321F1 /* UserProfile */,
 				0A87F7932BBFFED0007321F1 /* Authorization */,
 				0A87F78D2BBEF473007321F1 /* Buttons */,
@@ -121,7 +133,7 @@
 		0A87F7932BBFFED0007321F1 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
-				0A87F7872BBEF339007321F1 /* UserAuthorizationVC.swift */,
+				0A87F7872BBEF339007321F1 /* UserAuthorizationViewController.swift */,
 				0A87F7912BBEF622007321F1 /* UserSessionManager.swift */,
 				0A87F7942BBFFF1A007321F1 /* UserAuthorizationView.swift */,
 			);
@@ -133,7 +145,7 @@
 			children = (
 				0A87F7972BBFFF41007321F1 /* Person.swift */,
 				0A87F7992BBFFF5C007321F1 /* UserProfileView.swift */,
-				0A87F79B2BBFFF73007321F1 /* UserProfileVC.swift */,
+				0A87F79B2BBFFF73007321F1 /* UserProfileViewController.swift */,
 			);
 			path = UserProfile;
 			sourceTree = "<group>";
@@ -142,8 +154,27 @@
 			isa = PBXGroup;
 			children = (
 				0A87F7A12BC00146007321F1 /* UIView+Ext.swift */,
+				0A87F7A32BC2D805007321F1 /* UIViewController+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0A87F7A52BC2D88F007321F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A87F7A62BC2D8A0007321F1 /* MSAlertVC.swift */,
+				0A87F7A82BC2D8F9007321F1 /* MSAlertContainerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A87F7AA2BC2D923007321F1 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				0A87F7AB2BC2D935007321F1 /* MSTitleLabel.swift */,
+				0A87F7AD2BC2D961007321F1 /* MSSecondaryTitleLabel.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,11 +253,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A87F7AE2BC2D961007321F1 /* MSSecondaryTitleLabel.swift in Sources */,
 				0A87F7952BBFFF1A007321F1 /* UserAuthorizationView.swift in Sources */,
 				0A87F7A22BC00146007321F1 /* UIView+Ext.swift in Sources */,
+				0A87F7A72BC2D8A0007321F1 /* MSAlertVC.swift in Sources */,
+				0A87F7A42BC2D805007321F1 /* UIViewController+Ext.swift in Sources */,
 				0A87F79A2BBFFF5C007321F1 /* UserProfileView.swift in Sources */,
-				0A87F7882BBEF339007321F1 /* UserAuthorizationVC.swift in Sources */,
-				0A87F79C2BBFFF73007321F1 /* UserProfileVC.swift in Sources */,
+				0A87F7AC2BC2D935007321F1 /* MSTitleLabel.swift in Sources */,
+				0A87F7A92BC2D8F9007321F1 /* MSAlertContainerView.swift in Sources */,
+				0A87F7882BBEF339007321F1 /* UserAuthorizationViewController.swift in Sources */,
+				0A87F79C2BBFFF73007321F1 /* UserProfileViewController.swift in Sources */,
 				0A87F7922BBEF622007321F1 /* UserSessionManager.swift in Sources */,
 				0A87F78C2BBEF3F1007321F1 /* MSTextField.swift in Sources */,
 				0A87F7722BBEE9C5007321F1 /* AppDelegate.swift in Sources */,
