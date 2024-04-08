@@ -37,6 +37,7 @@ final class UserSessionManager {
     func isSessionActive(name: String, surname: String) -> Bool {
         if name == self.name && surname == self.surname {
             controller?.successUser(with: Person(name: name, surname: surname, phone: phone))
+            print(Person(name: name, surname: surname, phone: phone))
             return true
         } else {
             controller?.failureUser()
