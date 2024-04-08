@@ -32,6 +32,9 @@ class UserAuthorizationViewController: UIViewController {
     
     private func setupNavigationItem() {
         navigationItem.title = "Authorization"
+        for i in 1..<10 {
+            print(i)
+        }
     }
 }
 
